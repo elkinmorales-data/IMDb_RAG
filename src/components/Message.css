@@ -1,0 +1,190 @@
+.message {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.message-avatar {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-avatar {
+  background: #5a4fcf;
+  color: white;
+}
+
+.assistant-avatar {
+  background: var(--accent);
+  color: white;
+}
+
+.message-content {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.message-content p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.message.user .message-content {
+  color: var(--text-primary);
+}
+
+.message.assistant .message-content {
+  color: var(--text-primary);
+}
+
+.message.error .message-content {
+  color: #ef4444;
+}
+
+.message-movies {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.movies-label {
+  font-size: 12px;
+  color: var(--text-placeholder);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.movie-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--message-user-bg);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.movie-title {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.movie-meta {
+  color: var(--text-secondary);
+}
+
+.genre-tag {
+  font-size: 11px;
+  padding: 2px 6px;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+}
+
+.movie-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.rating-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.rating-badge.g {
+  background: #22c55e;
+  color: white;
+}
+
+.rating-badge.pg {
+  background: #3b82f6;
+  color: white;
+}
+
+.rating-badge.pg13 {
+  background: #f59e0b;
+  color: #000;
+}
+
+.rating-badge.r {
+  background: #ef4444;
+  color: white;
+}
+
+.rating-badge.nc17 {
+  background: #7c3aed;
+  color: white;
+}
+
+.movie-locations {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  display: block;
+}
+
+.movie-links {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.movie-link {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.movie-link:hover {
+  opacity: 0.8;
+}
+
+.trailer-link {
+  background: #ef4444;
+  color: white;
+}
+
+.imdb-link {
+  background: #f5c518;
+  color: #000;
+}
+
+.message-movies.specific {
+  border-top: none;
+  padding-top: 8px;
+}
+
+.specific-card {
+  padding: 10px 14px;
+  border: 1px solid var(--accent);
+  background: var(--message-user-bg);
+}
