@@ -59,8 +59,8 @@ Supabase Edge Function (search-hybrid)
 ### 1. Clonar e instalar
 
 ```bash
-git clone https://github.com/ELKIN/Coffee_RAG.git
-cd Coffee_RAG
+git clone https://github.com/ELKIN/IMDb_RAG.git
+cd IMDb_RAG
 npm install
 ```
 
