@@ -43,7 +43,7 @@ function InputBar({ onSend, disabled }) {
         </button>
       </form>
       <p className="input-disclaimer">
-        Coffee RAG puede cometer errores. Verifica la información importante.
+        IMDb RAG puede cometer errores. Verifica la información importante.
       </p>
     </div>
   )

@@ -18,7 +18,7 @@ function ChatArea({ activeConversation, onUpdateTitle, onToggleSidebar, sidebarO
 
   useEffect(() => {
     if (activeConversation) {
-      const saved = localStorage.getItem(`coffee_rag_chat_${activeConversation}`)
+      const saved = localStorage.getItem(`imdb_rag_chat_${activeConversation}`)
       setMessages(saved ? JSON.parse(saved) : [])
     } else {
       setMessages([])
@@ -27,7 +27,7 @@ function ChatArea({ activeConversation, onUpdateTitle, onToggleSidebar, sidebarO
 
   useEffect(() => {
     if (activeConversation) {
-      localStorage.setItem(`coffee_rag_chat_${activeConversation}`, JSON.stringify(messages))
+      localStorage.setItem(`imdb_rag_chat_${activeConversation}`, JSON.stringify(messages))
     }
   }, [messages, activeConversation])
 

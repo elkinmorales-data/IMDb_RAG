@@ -121,7 +121,7 @@ npm run dev
 ## Estructura del Proyecto
 
 ```
-Coffee_RAG/
+IMDb RAG/
 ├── src/
 │   ├── components/
 │   │   ├── ChatArea.jsx       # Chat principal

@@ -5,14 +5,14 @@ import './App.css'
 
 function App() {
   const [conversations, setConversations] = useState(() => {
-    const saved = localStorage.getItem('coffee_rag_conversations')
+    const saved = localStorage.getItem('imdb_rag_conversations')
     return saved ? JSON.parse(saved) : []
   })
   const [activeConversation, setActiveConversation] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
   useEffect(() => {
-    localStorage.setItem('coffee_rag_conversations', JSON.stringify(conversations))
+    localStorage.setItem('imdb_rag_conversations', JSON.stringify(conversations))
   }, [conversations])
 
   const handleNewChat = () => {
@@ -30,7 +30,7 @@ function App() {
   }
 
   const handleDeleteConversation = (id) => {
-    localStorage.removeItem(`coffee_rag_chat_${id}`)
+    localStorage.removeItem(`imdb_rag_chat_${id}`)
     setConversations(conversations.filter((c) => c.id !== id))
     if (activeConversation === id) {
       setActiveConversation(null)
